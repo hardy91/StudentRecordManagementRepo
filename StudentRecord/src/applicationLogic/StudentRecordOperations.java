@@ -1,10 +1,10 @@
 package applicationLogic;
+import userInterface.*;
 import java.util.LinkedList;
 
-import userInterface.Main;
 public class StudentRecordOperations {
 	
-	public static LinkedList<Student> studentRecord = new LinkedList<Student>();
+	
 	
 	/**
 	* insert the record in the linked list
@@ -13,7 +13,7 @@ public class StudentRecordOperations {
 	*/
 	public boolean insertRecord (int i , Student Stu )
 	{ boolean n;
-		studentRecord.add(i,Stu) ;
+		Main.studentRecord.add(i,Stu) ;
 		return n;
 	
 	}
@@ -25,9 +25,23 @@ public class StudentRecordOperations {
 	*/
 	
 	public boolean deleteRecord(String regNoObj)
-	{for(int i=0; studentRecord.get(i)!= regNoObj && i<=studentRecord.size();i++);
-	studentRecord.remove(i);
+	{
+		int i=0;
+		
+		while((!Main.studentRecord.get(i).getRegNo().equals(regNoObj))&& i<=Main.studentRecord.size())
+		{
+			i++;
 		}
+		if((!Main.studentRecord.get(i).getRegNo().equals(regNoObj)))
+		{
+			Main.studentRecord.remove(i);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 	
 	
 	
@@ -40,7 +54,8 @@ public class StudentRecordOperations {
 	* @return true on success else false
 	*/
 	public boolean updateRecord(String regNoObj, Student newRecord)
-	{for(int i=0;studentRecord.get(i)!= regNoObj && i<=studentRecord.size();i++);
+	{
+		for(int i=0;studentRecord.get(i)!= regNoObj && i<=studentRecord.size();i++);
 	}
 	/**
 	* search the record corresponding the given regNo
