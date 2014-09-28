@@ -1,5 +1,11 @@
 package applicationLogic;
+import java.util.LinkedList;
+
+import userInterface.Main;
 public class StudentRecordOperations {
+	
+	public static LinkedList<Student> studentRecord = new LinkedList<Student>();
+	
 	/**
 	* insert the record in the linked list
 	* @param record
@@ -19,7 +25,7 @@ public class StudentRecordOperations {
 	*/
 	
 	public boolean deleteRecord(String regNoObj)
-	{for(int i=0;studentRecord.get(i)!= regNoObj && i<=studentRecord.size();i++);
+	{for(int i=0; studentRecord.get(i)!= regNoObj && i<=studentRecord.size();i++);
 	studentRecord.remove(i);
 		}
 	

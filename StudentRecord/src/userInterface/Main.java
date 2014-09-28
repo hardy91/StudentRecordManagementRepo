@@ -5,7 +5,7 @@ import applicationLogic.Student;
 import applicationLogic.StudentRecordOperations;
 public class Main {
 	// one list that shall be used throughout the application
-	public LinkedList<Student> studentRecord = new LinkedList<Student>();
+	StudentRecordOperations obj = new StudentRecordOperations();
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
