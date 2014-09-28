@@ -5,8 +5,11 @@ public class StudentRecordOperations {
 	* @param record
 	* @return true on success else false
 	*/
-	public boolean insertRecord(Student record)
-	{
+	public boolean insertRecord (int i , Student Stu )
+	{ boolean n;
+		studentRecord.add(i,Stu) ;
+		return n;
+	
 	}
 	/**
 	* search the record in the linked list
@@ -14,9 +17,15 @@ public class StudentRecordOperations {
 	* @param regNo
 	* @return true on success else false
 	*/
-	public boolean deleteRecord(String regNo)
-	{
-	}
+	
+	public boolean deleteRecord(String regNoObj)
+	{for(int i=0;studentRecord.get(i)!= regNoObj && i<=studentRecord.size();i++);
+	studentRecord.remove(i);
+		}
+	
+	
+	
+	
 	/**
 	* search the record in the linked list
 	* update the values to the new record values
@@ -24,16 +33,16 @@ public class StudentRecordOperations {
 	* @param newRecord
 	* @return true on success else false
 	*/
-	public boolean updateRecord(String regNo, Student newRecord)
-	{
+	public boolean updateRecord(String regNoObj, Student newRecord)
+	{for(int i=0;studentRecord.get(i)!= regNoObj && i<=studentRecord.size();i++);
 	}
 	/**
 	* search the record corresponding the given regNo
 	* @param RegNo
 	* @return student record
 	*/
-	public Student searchRecord(String RegNo)
-	{
+	public Student searchRecord(String regNoObj)
+	{for(int i=0;studentRecord.get(i)!= regNoObj&& i<=studentRecord.size();i++);
 	}
 	/**
 	* search the record corresponding to the given
@@ -42,6 +51,6 @@ public class StudentRecordOperations {
 	* @return student record
 	*/
 	public Student searchRecordbyName(String Name)
-	{
+	{for(int i=0;studentRecord.get(i)!= regNoObj&& i<=studentRecord.size();i++);
 	}
 }
