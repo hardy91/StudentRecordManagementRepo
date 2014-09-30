@@ -12,9 +12,12 @@ public class StudentRecordOperations {
 	* @return true on success else false
 	*/
 	public boolean insertRecord (int i , Student Stu )
-	{ boolean n;
-		Main.studentRecord.add(i,Stu) ;
-		return true;
+	{
+		Main.studentRecord.add(i,Stu);
+		
+		/* branch 'master' of https://github.com/hardy91/StudentRecordManagementRepo.git
+		*/
+		return true ;
 	
 	}
 	/**
