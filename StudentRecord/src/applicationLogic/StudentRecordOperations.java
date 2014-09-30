@@ -54,7 +54,7 @@ public class StudentRecordOperations {
 	{for(int i=0;studentRecord.get(i)!= regNoObj&& i<=studentRecord.size();i++);
 	}
 	/**
-	* search the record corresponding to the given
+	* search the record corresponding to the given 
 	* and return the record
 	* @param Name
 	* @return student record
