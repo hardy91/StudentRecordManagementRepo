@@ -13,7 +13,7 @@ public class StudentRecordOperations {
 	*/
 	public boolean insertRecord (int i , Student Stu )
 	{ boolean n;
-		studentRecord.add(i,Stu) ;/*hello*/
+		Main.studentRecord.add(i,Stu) ;
 		return n;
 	
 	}
