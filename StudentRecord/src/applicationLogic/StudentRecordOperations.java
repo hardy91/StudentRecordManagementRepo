@@ -14,7 +14,7 @@ public class StudentRecordOperations {
 	public boolean insertRecord (int i , Student Stu )
 	{ boolean n;
 		Main.studentRecord.add(i,Stu) ;
-		return n;
+		return true;
 	
 	}
 	/**
