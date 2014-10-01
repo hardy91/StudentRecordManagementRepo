@@ -1,19 +1,34 @@
 package databaseAccess;
-import userInterface.Main;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.util.LinkedList;
+
 import applicationLogic.*;
-public class LoadData  implements java.io.Serializable{
-	
-	public static final long serialVersionUID = 42L;
-	applicationLogic.Student Stu = new Student(null,null,null,0,0,0);
-	 
+
+public class LoadData {
+
 	/**
 	 * load the data from the file to the linked list declared in Main.java
 	 * 
 	 * @param databasepath
 	 * @return true on success else false
 	 */
-	public boolean loadData(String databasepath) {
-		java.io.ObjectIntputStream ;
-		//testing
+	public static LinkedList<Student> loadData() {
+
+		LinkedList<Student> o_userdata = new LinkedList<Student>();
+		try {
+			FileInputStream fis = new FileInputStream("keep.dat");
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			Object obj = ois.readObject();
+			o_userdata = (LinkedList<Student>) obj;
+			ois.close();
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+		return o_userdata;
 	}
+
 }
