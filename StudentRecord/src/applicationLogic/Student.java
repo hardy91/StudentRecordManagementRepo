@@ -4,8 +4,7 @@ import java.io.Serializable;
 
 public class Student implements Serializable {
 	/*
-	 * http://stackoverflow.com/questions/18111717/syntax-of-serializing-a-
-	 * linkedlistobject
+	 * http://stackoverflow.com/questions/18111717/syntax-of-serializing-a-linkedlistobject
 	 */
 	private String regNo;
 	private String name;
@@ -79,6 +78,5 @@ public class Student implements Serializable {
 		this.maths = maths;
 	}
 
-	// Scanner user_input = new Scanner(System.in);
 
 }

@@ -13,7 +13,7 @@ public class SaveData {
 	 * @param databasepath
 	 * @return true on success else false
 	 */
-	private static void saveData(LinkedList<Student> record) {
+	public static void saveData(LinkedList<Student> record) {
 		try {
 			FileOutputStream fos = new FileOutputStream("keep.dat");
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
