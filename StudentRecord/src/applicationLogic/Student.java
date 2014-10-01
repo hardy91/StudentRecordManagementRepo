@@ -14,7 +14,7 @@ public class Student {
 	private double maths;
 	
 	//Constructor
-	Student(String RegNo, String Name, String Cls,
+	public Student(String RegNo, String Name, String Cls,
 			double Phy, double Chem, double Maths){
 		//initializing
 		this.regNo = RegNo;
