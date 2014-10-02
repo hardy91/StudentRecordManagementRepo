@@ -195,8 +195,9 @@ public class UserInterface {
 				// write code to call functions to display all the records
 				// in the linked list ordered by ascending names
 				break;
-			}*/
-			case "6": {
+			}
+			*/
+			case "7": {
 				// no need to change anything
 				System.out.println("****Thanks for using this application****");
 				break;
@@ -207,7 +208,7 @@ public class UserInterface {
 				break;
 			}
 			}
-		} while (!choice.equals("6"));
+		} while (!choice.equals("7"));
 		scan.close();
 	}
 }
