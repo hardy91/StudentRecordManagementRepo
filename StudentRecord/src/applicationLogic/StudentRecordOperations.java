@@ -4,7 +4,7 @@ import userInterface.*;
 import java.util.LinkedList;
 
 public class StudentRecordOperations {
-	public LinkedList<Student> nameSortedRecord = new LinkedList<Student>();
+//	public LinkedList<Student> nameSortedRecord = new LinkedList<Student>();
 	Student tempStu = new Student(null, null, null, 0, 0, 0);
 
 	/**

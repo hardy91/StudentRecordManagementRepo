@@ -26,8 +26,8 @@ public class UserInterface {
 			System.out.println("3. Update a record");
 			System.out.println("4. Search by registration number");
 			System.out.println("5. Search by name");
-			System.out.println("6. Display all records(sorted by names)");
-			System.out.println("7. Quit");
+	//		System.out.println("6. Display all records(sorted by names)");
+			System.out.println("6. Quit");
 			System.out.print("Enter your choice: ");
 			// get choice from the user
 			choice = scan.next();
@@ -168,7 +168,7 @@ public class UserInterface {
 				// display them.
 				break;
 			}
-			case "6": {
+/*			case "6": {
 				recordObj = StReOpObj.sortedRecordName(Main.studentRecord);
 
 				for (int j = 0; j <= recordObj.size(); j++) {
@@ -195,8 +195,8 @@ public class UserInterface {
 				// write code to call functions to display all the records
 				// in the linked list ordered by ascending names
 				break;
-			}
-			case "7": {
+			}*/
+			case "6": {
 				// no need to change anything
 				System.out.println("****Thanks for using this application****");
 				break;
@@ -207,7 +207,7 @@ public class UserInterface {
 				break;
 			}
 			}
-		} while (!choice.equals("7"));
+		} while (!choice.equals("6"));
 		scan.close();
 	}
 }

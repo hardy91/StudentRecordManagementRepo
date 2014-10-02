@@ -12,7 +12,9 @@ public class Main {
 	public static LinkedList<Student> studentRecord = new LinkedList<Student>();
 
 	public static void main(String[] args) {
-		databaseAccess.LoadData.loadData();/*
+		
+		String path = "C:/Users/john/git/StudentRecordManagementRepo/StudentRecord/src/databaseAccess/keep.txt";
+		databaseAccess.LoadData.loadData(path);/*
 											 * if we call load data and save
 											 * data using name of package then
 											 * there is no need to import that
@@ -24,7 +26,7 @@ public class Main {
 		 */
 		UserInterface ui = new UserInterface();
 		ui.interactWithUser();
-		SaveData.saveData(studentRecord);
+		SaveData.saveData(studentRecord,path);
 
 	}
 }

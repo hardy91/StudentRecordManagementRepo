@@ -14,11 +14,11 @@ public class LoadData {
 	 * @param databasepath
 	 * @return true on success else false
 	 */
-	public static LinkedList<Student> loadData() {
+	public static LinkedList<Student> loadData(String path) {
 
 		LinkedList<Student> o_userdata = new LinkedList<Student>();
 		try {
-			FileInputStream fis = new FileInputStream("keep.dat");
+			FileInputStream fis = new FileInputStream(path);
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			Object obj = ois.readObject();
 			o_userdata = (LinkedList<Student>) obj;
