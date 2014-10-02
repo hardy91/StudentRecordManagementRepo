@@ -168,6 +168,7 @@ public class UserInterface {
 				// display them.
 				break;
 			}
+			/*
 			case "6": {
 				recordObj = StReOpObj.sortedRecordName(Main.studentRecord);
 
@@ -196,6 +197,7 @@ public class UserInterface {
 				// in the linked list ordered by ascending names
 				break;
 			}
+			*/
 			case "7": {
 				// no need to change anything
 				System.out.println("****Thanks for using this application****");
